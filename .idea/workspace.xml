@@ -35,6 +35,7 @@
       <list>
         <option value="Kotlin File" />
         <option value="Kotlin Object" />
+        <option value="Kotlin Interface" />
       </list>
     </option>
   </component>
@@ -55,6 +56,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Gradle.Preview: MainKt.app.executor": "Run",
     "Gradle.desktop.executor": "Run",
@@ -62,7 +64,7 @@
     "Kotlin.MainKt.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "<未知>",
+    "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "openjdk-23",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/media/bobo/learn/Sping/demo-compose",
@@ -71,7 +73,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "vcs.Git",
+    "settings.editor.selected.configurable": "fileTemplates",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -109,7 +111,7 @@
       <workItem from="1730010089337" duration="6071000" />
       <workItem from="1730016501492" duration="1227000" />
       <workItem from="1730017731697" duration="1496000" />
-      <workItem from="1730019232368" duration="7524000" />
+      <workItem from="1730019232368" duration="9877000" />
     </task>
     <task id="LOCAL-00001" summary="Compose-desktop&#10;Compose for Desktop 可以生成适用于 macOS、Linux 和 Windows 的应用程序。您可以通过我们的模板使用这些平台中的任何一个。">
       <option name="closed" value="true" />
@@ -161,6 +163,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
