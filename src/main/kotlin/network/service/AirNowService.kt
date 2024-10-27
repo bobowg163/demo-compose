@@ -1,4 +1,4 @@
-package service
+package network.service
 
 import WEATHER_KEY
 import model.indices.WeatherLifeIndicesBean
