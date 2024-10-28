@@ -41,6 +41,7 @@ class AppViewModel {
         )
         DataStoreUtils.putData(CURRENT_CITY_ID, location)
     }
+
     /**
      * 当前城市及当前城市 ID
      */
@@ -92,4 +93,46 @@ class AppViewModel {
         }
     }
 
+    /*
+    * 位置列表
+    * */
+    private val _locationModel = MutableStateFlow(listOf<GeoBean.LocationBean>())
+    val locationListData: Flow<List<GeoBean.LocationBean>>
+        get() = _locationModel
+
+    suspend fun searchCity(inputText:String){
+        val geoBean = playWeatherNetWork.getCityLookup(inputText)
+        val locationBeanList = geoBean.location
+        if(!locationBeanList.isNullOrEmpty()) {
+            if(_locationModel.value==locationBeanList){
+                println("位置和之前是一样的，跳过它")
+            }
+            _locationModel.value = locationBeanList
+        }
+    }
+
+    /**
+     * 热门城市列表
+     */
+    private val _topLocationModel = MutableStateFlow(listOf<GeoBean.LocationBean>())
+    val topLocationListData: Flow<List<GeoBean.LocationBean>>
+        get() = _topLocationModel
+
+    suspend fun searchCity(){
+        val geoBean = playWeatherNetWork.getCityTop()
+        val locationBeanList = geoBean.topCityList
+        if (!locationBeanList.isNullOrEmpty()) {
+            if(_topLocationModel.value==locationBeanList){
+                println("位置和之前是一样的，跳过它")
+            }
+            _topLocationModel.value = locationBeanList
+        }
+    }
+
+    /**
+     * 清除城市搜索
+     */
+    fun clearSearchCity() {
+        _locationModel.value = arrayListOf()
+    }
 }

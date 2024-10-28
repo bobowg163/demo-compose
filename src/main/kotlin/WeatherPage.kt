@@ -9,7 +9,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import model.WeatherModel
-import view.LeftInfomation
+import view.leftInfomation
 
 /**
  * @作者 bobo
@@ -25,11 +25,10 @@ fun WeatherPage(appViewModel: AppViewModel) {
     LaunchedEffect(currentCityId) {
         appViewModel.getWeather(currentCityId)
     }
-
     Row(
         modifier = Modifier.fillMaxSize().padding(16.dp)
     ) {
-        LeftInfomation(appViewModel,weatherModel.nowBaseBean,currentCityId)
+        leftInfomation(appViewModel,weatherModel.nowBaseBean,currentCityId)
     }
 
 }

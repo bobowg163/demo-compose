@@ -15,6 +15,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.rotate
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -60,7 +61,41 @@ fun WeatherDetails(
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             RotateWeatherIcon(nowBean?.icon ?: "100")
+            Row(
+                horizontalArrangement = Arrangement.Center,
+                verticalAlignment = Alignment.Bottom
+            ) {
+                Text("${nowBean?.temp ?: "0"}°", fontSize = 80.sp, maxLines = 1)
+                Text(nowBean?.text ?: "晴", fontSize = 15.sp, maxLines = 1)
+            }
         }
+
+        Row(
+            modifier = Modifier.fillMaxWidth().padding(bottom = 10.dp),
+            horizontalArrangement = Arrangement.SpaceEvenly,
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            WeatherItem(nowBean?.windDir ?: "南风", "${nowBean?.windScale ?: "1"}级")
+            WeatherItem("降雨", "${nowBean?.precip ?: "0"}毫米")
+            WeatherItem("能见度", "${nowBean?.vis ?: "0"}公里")
+            WeatherItem("气压", "${nowBean?.pressure ?: "0"}百帕")
+
+        }
+    }
+
+
+}
+
+@Composable
+fun WeatherItem(name: String, value: String) {
+    Column(
+        modifier = Modifier,
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Text(name, fontSize = 14.sp, color = Color.LightGray)
+        Spacer(modifier = Modifier.height(5.dp))
+        Text(value, fontSize = 14.sp, color = Color.DarkGray)
     }
 }
 
@@ -98,7 +133,7 @@ fun RotateWeatherIcon(icon: String) {
     Image(
         painter = painterResource(getWeatherIcon(icon)),
         contentDescription = null,
-        modifier = modifier.size(170.dp).padding(12.dp)
+        modifier = modifier.size(170.dp).padding(10.dp)
     )
 }
 

@@ -1,6 +1,7 @@
 package view
 
 import AppViewModel
+import androidx.compose.animation.*
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -20,7 +21,7 @@ import model.weather.WeatherNowBean
  */
 
 @Composable
-fun LeftInfomation(
+fun leftInfomation(
     appViewModel: AppViewModel,
     nowBean: WeatherNowBean.NowBaseBean?,
     currentCityId: String
@@ -36,13 +37,26 @@ fun LeftInfomation(
             nowBean.apply {
                 nowBean?.city = currentCity
             },
-            onAddCityClick = {showSearch = true},
+            onAddCityClick = { showSearch = true },
             onRefreshClick = {
                 scope.launch {
                     appViewModel.getWeather(currentCityId)
                 }
             },
         )
+
+        AnimatedVisibility(
+            visible = showSearch,
+            enter = slideInHorizontally(),
+            exit = slideOutHorizontally()
+        ) {
+            SearchCity(
+                Modifier.fillMaxSize().background(color = Color.White, shape = RoundedCornerShape(10.dp)),
+                appViewModel
+            ){
+                showSearch = false
+            }
+        }
 
     }
 }
