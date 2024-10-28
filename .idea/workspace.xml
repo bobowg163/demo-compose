@@ -60,7 +60,7 @@
     <option name="CHARSET" value="none" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -80,8 +80,12 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Gradle.Preview: MainKt.app.executor": "Run",
     "Gradle.Preview: WeatherPageKt.WeatherPage.executor": "Run",
+    "Gradle.Preview: view.AirQualityKt.AirQualityPreview.executor": "Run",
+    "Gradle.Preview: view.HourWeatherKt.HourWeatherItemPreview.executor": "Run",
+    "Gradle.Preview: view.HourWeatherKt.HourWeatherPreview.executor": "Run",
     "Gradle.Preview: view.LeftInfomationKt.LeftInfomation.executor": "Run",
     "Gradle.Preview: view.WeatherDetailsKt.WeatherDetailsPreview.executor": "Run",
+    "Gradle.Preview: view.WeekWeatherKt.WeekWeatherPreview.executor": "Run",
     "Gradle.desktop.executor": "Run",
     "Gradle.下载源代码.executor": "Run",
     "Gradle.构建 demo-compose.executor": "Run",
