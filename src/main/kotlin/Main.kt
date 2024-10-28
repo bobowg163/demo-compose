@@ -16,7 +16,7 @@ import view.MenuBarWeather
 fun app() {
     val appViewModel = AppViewModel()
     MaterialTheme {
-
+        WeatherPage(appViewModel)
     }
 }
 
@@ -27,7 +27,7 @@ fun main() = application {
         isOpen.value = BuildTray(isOpen, showTray)
         Window(
             onCloseRequest = { isOpen.value = false },
-            title = "Compose Desktop",
+            title = "三亚天气预报",
             state = rememberWindowState(width = 800.dp, height = 600.dp),
             icon = painterResource("image/launcher.png")
         ) {

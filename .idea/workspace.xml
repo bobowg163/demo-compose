@@ -74,6 +74,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Gradle.Preview: MainKt.app.executor": "Run",
+    "Gradle.Preview: WeatherPageKt.WeatherPage.executor": "Run",
     "Gradle.desktop.executor": "Run",
     "Gradle.下载源代码.executor": "Run",
     "Gradle.构建 demo-compose.executor": "Run",
@@ -156,7 +157,7 @@
       <workItem from="1730098462663" duration="842000" />
       <workItem from="1730099327493" duration="113000" />
       <workItem from="1730099447315" duration="6309000" />
-      <workItem from="1730105769884" duration="3217000" />
+      <workItem from="1730105769884" duration="3830000" />
     </task>
     <task id="LOCAL-00001" summary="Compose-desktop&#10;Compose for Desktop 可以生成适用于 macOS、Linux 和 Windows 的应用程序。您可以通过我们的模板使用这些平台中的任何一个。">
       <option name="closed" value="true" />
@@ -230,7 +231,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730105531995</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="'初始化界面，添加一些简单的菜单功能。">
+      <option name="closed" value="true" />
+      <created>1730109099954</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1730109099954</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,7 +276,8 @@
     <MESSAGE value="Compose-desktop&#10;Compose for Desktop 可以生成适用于 macOS、Linux 和 Windows 的应用程序。您可以通过我们的模板使用这些平台中的任何一个。" />
     <MESSAGE value="修改文件路径" />
     <MESSAGE value="添加获取天气的状态动作。" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加获取天气的状态动作。" />
+    <MESSAGE value="'初始化界面，添加一些简单的菜单功能。" />
+    <option name="LAST_COMMIT_MESSAGE" value="'初始化界面，添加一些简单的菜单功能。" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
