@@ -1,57 +1,34 @@
 import androidx.compose.desktop.ui.tooling.preview.Preview
-import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.*
 import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.painter.BitmapPainter
-import androidx.compose.ui.res.loadImageBitmap
-import androidx.compose.ui.res.useResource
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
 import androidx.compose.ui.window.rememberWindowState
+import view.BuildTray
 
 @Composable
 @Preview
 fun app() {
+    val appViewModel = AppViewModel()
     MaterialTheme {
-        Column(
-            Modifier.fillMaxSize().padding(top = 15.dp),
-            Arrangement.spacedBy(5.dp),
-        ) {
-            Image(
-                modifier = Modifier.align(Alignment.CenterHorizontally).width(200.dp),
-                painter = BitmapPainter(useResource("image/mht.png", ::loadImageBitmap)),
-                contentDescription = "麦皓天"
-            )
-            Text(
-                modifier = Modifier.align(Alignment.CenterHorizontally),
-                text = "麦皓天",
-                fontSize = 20.sp,
-                color = Color.Red,
-            )
-            AsyncImage(
-                load = { loadImageBitmap("https://www.wanandroid.com/blogimgs/42da12d8-de56-4439-b40c-eab66c227a4b.png") },
-                painterFor = { BitmapPainter(it) },
-                contentDescription = "Sample",
-                modifier = Modifier.align(Alignment.CenterHorizontally).width(200.dp)
-            )
 
-        }
     }
 }
 
 fun main() = application {
-    Window(
-        onCloseRequest = ::exitApplication,
-        title = "Compose Desktop",
-        state = rememberWindowState(width = 600.dp, height = 800.dp)
-    ) {
-        app()
+    val isOpen = rememberSaveable { mutableStateOf(true) }
+    val showTray = rememberSaveable { mutableStateOf(true) }
+    if (isOpen.value){
+        isOpen.value = BuildTray(isOpen,showTray)
+        Window(
+            onCloseRequest = {isOpen.value = false},
+            title = "Compose Desktop",
+            state = rememberWindowState(width = 800.dp, height = 600.dp)
+        ) {
+            app()
+        }
     }
 }
