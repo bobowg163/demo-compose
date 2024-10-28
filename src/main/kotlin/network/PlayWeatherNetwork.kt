@@ -1,14 +1,17 @@
 package network
 
 import model.Lang
+import model.air.AirNowBean
 import model.city.GeoBean
 import model.city.TopGeoBean
 import model.indices.WeatherLifeIndicesBean
+import model.weather.WeatherDailyBean
 import model.weather.WeatherHourlyBean
 import model.weather.WeatherNowBean
 import network.service.AirNowService
 import network.service.CityLookupService
 import network.service.CityWeatherService
+import network.service.WeatherLifeIndicesService
 
 /**
  * @作者 bobo
@@ -45,5 +48,14 @@ object PlayWeatherNetwork {
     suspend fun getWeather24Hour(location: String): WeatherHourlyBean =
         cityWeatherService.getWeather24Hour(location = location, lang = language.code)
 
+    suspend fun getWeather3Day(location: String): WeatherDailyBean =
+        cityWeatherService.getWeather3Day(location = location, lang = language.code)
 
+    suspend fun getWeather7Day(location: String): WeatherDailyBean =
+        cityWeatherService.getWeather7Day(location = location, lang = language.code)
+
+    private val weatherLifeIndicesService = ServiceCreator.create(WeatherLifeIndicesService::class.java)
+
+    suspend fun getAirNowBean(location: String): AirNowBean =
+        weatherLifeIndicesService.getAirNowBean(location = location, lang = language.code)
 }
