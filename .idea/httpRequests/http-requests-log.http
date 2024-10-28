@@ -4,6 +4,26 @@ Accept-Encoding: br, deflate, gzip, x-gzip
 Accept: */*
 content-length: 0
 
+<> 2024-10-28T170835.200.json
+
+###
+
+GET https://devapi.qweather.com/v7/weather/3d
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-28T164538.200.json
+
+###
+
+GET https://devapi.qweather.com/v7/weather/3d
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
 <> 2024-10-28T151356-1.200.json
 
 ###
