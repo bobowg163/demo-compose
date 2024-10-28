@@ -41,6 +41,11 @@ class AppViewModel {
         )
         DataStoreUtils.putData(CURRENT_CITY_ID, location)
     }
+    /**
+     * 当前城市及当前城市 ID
+     */
+    val currentCity = DataStoreUtils.getData(CURRENT_CITY, DEFAULT_CITY)
+    val currentCityId = DataStoreUtils.getData(CURRENT_CITY_ID, DEFAULT_CITY_ID)
 
     /**
      * 获取天气信息
@@ -54,6 +59,7 @@ class AppViewModel {
         val airNow = playWeatherNetWork.getAirNowBean(location)
         val weatherLifeIndicesList = playWeatherNetWork.getWeatherLifeIndicesBean(location)
         buildWeekWeather(weather7Day, weatherNow)
+
     }
 
     /*
