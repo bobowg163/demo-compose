@@ -2,6 +2,7 @@ import AppViewModel.Companion.DEFAULT_CITY_ID
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
@@ -10,6 +11,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import model.WeatherModel
 import view.leftInfomation
+import view.rightInfomation
 
 /**
  * @作者 bobo
@@ -29,6 +31,8 @@ fun WeatherPage(appViewModel: AppViewModel) {
         modifier = Modifier.fillMaxSize().padding(16.dp)
     ) {
         leftInfomation(appViewModel,weatherModel.nowBaseBean,currentCityId)
+        val modifier = Modifier.weight(1f).width(500.dp)
+        rightInfomation(modifier,weatherModel)
     }
 
 }

@@ -34,7 +34,7 @@ fun ShowDialog(
     content: String,
     cancleString: String = "取消",
     confirmString: String = "确定",
-    onConfirmListener: () -> Unit,
+    onConfirmListener: () -> Unit = {},
 ) {
     if (!alertDialog.value) return
     val buttonHeight = 45.dp
