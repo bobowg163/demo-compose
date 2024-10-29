@@ -102,6 +102,7 @@
     "Gradle.Preview: view.HourWeatherKt.HourWeatherItemPreview.executor": "Run",
     "Gradle.Preview: view.HourWeatherKt.HourWeatherPreview.executor": "Run",
     "Gradle.Preview: view.LeftInfomationKt.LeftInfomation.executor": "Run",
+    "Gradle.Preview: view.LifeWeatherContentKt.LifeWeatherContentPreview.executor": "Run",
     "Gradle.Preview: view.SunriseSunsetContentKt.SunriseSunsetContentPreview.executor": "Run",
     "Gradle.Preview: view.WeatherDetailsKt.WeatherDetailsPreview.executor": "Run",
     "Gradle.Preview: view.WeekWeatherKt.WeekWeatherPreview.executor": "Run",
@@ -120,6 +121,7 @@
     "Gradle.demo-compose [run].executor": "Run",
     "Gradle.desktop.executor": "Run",
     "Gradle.下载源代码.executor": "Run",
+    "Gradle.升级 Gradle 包装器.executor": "Run",
     "Gradle.构建 demo-compose.executor": "Run",
     "HTTP 请求.generated-requests | #2.executor": "Run",
     "HTTP 请求.generated-requests中的所有.executor": "Run",
@@ -130,7 +132,7 @@
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "openjdk-23",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/media/bobo/learn/Android/Gradle",
+    "last_opened_file_path": "/media/bobo/learn/Sping/demo-compose",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -151,8 +153,12 @@
     ]
   }
 }]]></component>
+  <component name="ReadonlyStatusHandler">
+    <option name="SHOW_DIALOG" value="false" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/resources/image" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -170,13 +176,57 @@
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="--stacktrace" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
             <option value="packageDeb" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="demo-compose [packageReleaseDeb]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="packageReleaseDeb" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="demo-compose [package]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="package" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -211,8 +261,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.demo-compose [run]" />
         <item itemvalue="Gradle.demo-compose [packageDeb]" />
+        <item itemvalue="Gradle.demo-compose [packageReleaseDeb]" />
+        <item itemvalue="Gradle.demo-compose [run]" />
+        <item itemvalue="Gradle.demo-compose [package]" />
       </list>
     </recent_temporary>
   </component>
@@ -242,7 +294,7 @@
       <workItem from="1730105769884" duration="3830000" />
       <workItem from="1730159772006" duration="4475000" />
       <workItem from="1730165520295" duration="765000" />
-      <workItem from="1730166289210" duration="5366000" />
+      <workItem from="1730166289210" duration="8960000" />
     </task>
     <task id="LOCAL-00001" summary="Compose-desktop&#10;Compose for Desktop 可以生成适用于 macOS、Linux 和 Windows 的应用程序。您可以通过我们的模板使用这些平台中的任何一个。">
       <option name="closed" value="true" />
@@ -356,7 +408,31 @@
       <option name="project" value="LOCAL" />
       <updated>1730133531781</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="基本完成了所有功能，剩下的就是修复BUG">
+      <option name="closed" value="true" />
+      <created>1730171976498</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1730171976498</updated>
+    </task>
+    <task id="LOCAL-00016" summary="基本完成了所有功能，剩下的就是修复BUG">
+      <option name="closed" value="true" />
+      <created>1730171980216</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1730171980216</updated>
+    </task>
+    <task id="LOCAL-00017" summary="修复BUG">
+      <option name="closed" value="true" />
+      <created>1730174172813</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1730174172813</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,7 +470,9 @@
     <MESSAGE value="修改文件路径" />
     <MESSAGE value="添加获取天气的状态动作。" />
     <MESSAGE value="'初始化界面，添加一些简单的菜单功能。" />
-    <option name="LAST_COMMIT_MESSAGE" value="'初始化界面，添加一些简单的菜单功能。" />
+    <MESSAGE value="基本完成了所有功能，剩下的就是修复BUG" />
+    <MESSAGE value="修复BUG" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复BUG" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

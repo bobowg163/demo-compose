@@ -1,8 +1,10 @@
 import AppViewModel.Companion.DEFAULT_CITY_ID
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
+import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
@@ -10,6 +12,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import model.WeatherModel
+import org.jetbrains.skia.Color
 import view.leftInformation
 import view.rightInfomation
 
@@ -28,7 +31,7 @@ fun WeatherPage(appViewModel: AppViewModel) {
         appViewModel.getWeather(currentCityId)
     }
     Row(
-        modifier = Modifier.fillMaxSize().padding(16.dp)
+        modifier = Modifier.fillMaxSize().background(color = MaterialTheme.colors.onPrimary).padding(16.dp)
     ) {
         leftInformation(appViewModel,weatherModel.nowBaseBean,currentCityId)
         val modifier = Modifier.weight(1f).width(500.dp)

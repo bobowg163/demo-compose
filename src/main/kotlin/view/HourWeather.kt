@@ -2,10 +2,13 @@ package view
 
 import androidx.compose.desktop.ui.tooling.preview.Preview
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.Card
 import androidx.compose.material.Divider
 import androidx.compose.material.MaterialTheme
@@ -33,7 +36,9 @@ fun HourWeather(hourlyBeanList: List<WeatherHourlyBean.HourlyBean>) {
         modifier = Modifier.fillMaxWidth(),
         shape = RoundedCornerShape(10.dp)
     ) {
-        Column(modifier = Modifier.fillMaxWidth()) {
+        Column(
+            modifier = Modifier.fillMaxWidth()
+        ) {
             Text(
                 text = "24小时天气预报",
                 fontSize = 13.sp,

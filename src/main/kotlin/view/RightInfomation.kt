@@ -34,5 +34,9 @@ fun rightInfomation(
         DayWeatherContent(weatherModel)
         // 日出日落
         SunriseSunsetContent(weatherModel.dailyBean)
+        // 当天生活指数
+        LifeWeatherContent(weatherModel.weatherLifeList)
+        // 数据来源
+        SourceData(weatherModel.fxLink)
     }
 }

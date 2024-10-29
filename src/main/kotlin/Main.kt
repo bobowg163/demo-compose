@@ -29,7 +29,7 @@ fun main() = application {
             onCloseRequest = { isOpen.value = false },
             title = "三亚天气预报",
             state = rememberWindowState(width = 1080.dp, height = 600.dp),
-            icon = painterResource("image/launcher.png")
+            icon = painterResource("image/launcher.png"),
         ) {
             showTray.value = MenuBarWeather(isOpen, showTray)
             app()
