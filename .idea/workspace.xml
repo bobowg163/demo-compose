@@ -74,50 +74,50 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Gradle.Preview: MainKt.app.executor": "Run",
-    "Gradle.Preview: WeatherPageKt.WeatherPage.executor": "Run",
-    "Gradle.Preview: view.AirQualityKt.AirQualityPreview.executor": "Run",
-    "Gradle.Preview: view.HourWeatherKt.HourWeatherItemPreview.executor": "Run",
-    "Gradle.Preview: view.HourWeatherKt.HourWeatherPreview.executor": "Run",
-    "Gradle.Preview: view.LeftInfomationKt.LeftInfomation.executor": "Run",
-    "Gradle.Preview: view.WeatherDetailsKt.WeatherDetailsPreview.executor": "Run",
-    "Gradle.Preview: view.WeekWeatherKt.WeekWeatherPreview.executor": "Run",
-    "Gradle.desktop.executor": "Run",
-    "Gradle.下载源代码.executor": "Run",
-    "Gradle.构建 demo-compose.executor": "Run",
-    "HTTP 请求.generated-requests | #2.executor": "Run",
-    "HTTP 请求.generated-requests中的所有.executor": "Run",
-    "Kotlin 脚本(测试版).build.gradle.kts.executor": "Run",
-    "Kotlin.MainKt.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "openjdk-23",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/media/bobo/learn/Sping/demo-compose/src/main/resources/image",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Gradle.Preview: MainKt.app.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Preview: WeatherPageKt.WeatherPage.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Preview: view.AirQualityKt.AirQualityPreview.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Preview: view.HourWeatherKt.HourWeatherItemPreview.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Preview: view.HourWeatherKt.HourWeatherPreview.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Preview: view.LeftInfomationKt.LeftInfomation.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Preview: view.WeatherDetailsKt.WeatherDetailsPreview.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Preview: view.WeekWeatherKt.WeekWeatherPreview.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.desktop.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.下载源代码.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.构建 demo-compose.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP 请求.generated-requests | #2.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP 请求.generated-requests中的所有.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin 脚本(测试版).build.gradle.kts.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.MainKt.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-23&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/media/bobo/learn/Sping/demo-compose/src/main/resources/image&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "GitStage.ChangesTree.GroupingKeys": [
-      "directory",
-      "module",
-      "repository"
+  &quot;keyToStringList&quot;: {
+    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;,
+      &quot;repository&quot;
     ],
-    "kotlin-gradle-user-dirs": [
-      "/media/bobo/learn/Android/Gradle"
+    &quot;kotlin-gradle-user-dirs&quot;: [
+      &quot;/media/bobo/learn/Android/Gradle&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/image" />
@@ -131,15 +131,23 @@
       <recent name="model.air" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Kotlin.MainKt">
     <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="运行单个请求">
       <method v="2" />
     </configuration>
     <configuration name="generated-requests中的所有" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http">
       <method v="2" />
     </configuration>
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <module name="demo-compose.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="HTTP 请求.generated-requests | #2" />
         <item itemvalue="HTTP 请求.generated-requests中的所有" />
       </list>
