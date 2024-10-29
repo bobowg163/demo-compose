@@ -32,7 +32,7 @@ compose.desktop {
 
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
-            packageName = "demo-compose"
+            packageName = "三亚天气"
             packageVersion = "1.0.1"
         }
     }

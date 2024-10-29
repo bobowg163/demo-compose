@@ -8,6 +8,7 @@
           <option value="demo-compose" />
           <option value="demo-compose" />
           <option value="demo-compose" />
+          <option value="demo-compose" />
         </list>
       </option>
       <option name="ignoredPackages">
@@ -15,10 +16,12 @@
           <option value="com.google.code.gson:gson:2.8.5" />
           <option value="com.squareup.okio:okio:1.17.2" />
           <option value="com.squareup.okio:okio-jvm:3.1.0" />
+          <option value="com.squareup.okhttp3:okhttp:3.14.9" />
         </list>
       </option>
       <option name="ignoredReasons">
         <list>
+          <option value="不可利用" />
           <option value="不可利用" />
           <option value="不可利用" />
           <option value="不可利用" />

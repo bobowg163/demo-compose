@@ -38,7 +38,6 @@ import utils.getWeatherIcon
  * @日期 2024/10/28 时间 下午8:04
  * October28日Monday
  */
-
 @Composable
 fun SearchCity(modifier: Modifier, appViewModel: AppViewModel, backClick: () -> Unit) {
     var inputText by rememberSaveable { mutableStateOf("") }
@@ -80,6 +79,9 @@ fun SearchCity(modifier: Modifier, appViewModel: AppViewModel, backClick: () -> 
                     modifier = Modifier.fillMaxWidth().padding(5.dp),
                     textStyle = TextStyle(fontSize = 14.sp),
                     keyboardOptions = KeyboardOptions(imeAction = ImeAction.Search),
+                    keyboardActions = KeyboardActions(onSearch = {
+
+                    }),
                     maxLines = 1,
                 )
             }

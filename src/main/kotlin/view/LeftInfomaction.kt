@@ -20,29 +20,35 @@ import model.weather.WeatherNowBean
  * October28日Monday
  */
 
+/**
+ * 主页面左边
+ */
 @Composable
-fun leftInfomation(
+fun leftInformation(
     appViewModel: AppViewModel,
-    nowBean: WeatherNowBean.NowBaseBean?,
+    nowBaseBean: WeatherNowBean.NowBaseBean?,
     currentCityId: String
 ) {
     var showSearch by rememberSaveable { mutableStateOf(false) }
     val currentCity by appViewModel.currentCity.collectAsState("三亚")
     val scope = rememberCoroutineScope()
     Box(
-        modifier = Modifier.fillMaxHeight().width(300.dp).padding(end = 16.dp)
+        Modifier.fillMaxHeight().width(300.dp).padding(end = 10.dp)
     ) {
         WeatherDetails(
-            Modifier.fillMaxSize().background(color = Color.White, shape = RoundedCornerShape(10.dp)),
-            nowBean.apply {
-                nowBean?.city = currentCity
+            Modifier.fillMaxSize()
+                .background(color = Color.White, shape = RoundedCornerShape(10.dp)),
+            nowBaseBean.apply {
+                nowBaseBean?.city = currentCity
             },
-            onAddCityClick = { showSearch = true },
+            onAddClick = {
+                showSearch = true
+            },
             onRefreshClick = {
                 scope.launch {
                     appViewModel.getWeather(currentCityId)
                 }
-            },
+            }
         )
 
         AnimatedVisibility(
@@ -51,9 +57,10 @@ fun leftInfomation(
             exit = slideOutHorizontally()
         ) {
             SearchCity(
-                Modifier.fillMaxSize().background(color = Color.White, shape = RoundedCornerShape(10.dp)),
+                Modifier.fillMaxSize()
+                    .background(color = Color.White, shape = RoundedCornerShape(10.dp)),
                 appViewModel
-            ){
+            ) {
                 showSearch = false
             }
         }

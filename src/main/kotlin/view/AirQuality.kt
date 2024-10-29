@@ -88,12 +88,12 @@ private fun AirQualityProgress(aqi: Int) {
     ) {
         drawLine(
             brush = Brush.linearGradient(
-                0.0f to Color(red = 139, green = 195, blue = 74),
-                0.1f to Color(red = 255, green = 239, blue = 59),
-                0.2f to Color(red = 255, green = 152, blue = 0),
-                0.3f to Color(red = 244, green = 67, blue = 54),
-                0.4f to Color(red = 156, green = 39, blue = 176),
-                1.0f to Color(red = 143, green = 0, blue = 0),
+                0.0f to Color.Gray,
+                0.1f to Color.Red,
+                0.2f to Color.Blue,
+                0.3f to Color.Black,
+                0.4f to Color.Cyan,
+                1.0f to Color.LightGray,
             ),
             start = Offset.Zero,
             end = Offset(size.width, 0f),

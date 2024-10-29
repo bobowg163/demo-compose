@@ -28,5 +28,11 @@ fun rightInfomation(
         AirQuality(weatherModel.airNowBean)
         // 未来24小时天气预报
         HourWeather(weatherModel.hourlyBeanList)
+        // 未来7天天气预报
+        WeekWeather(weatherModel.dailyBeanList)
+        // 当天具体天气数值
+        DayWeatherContent(weatherModel)
+        // 日出日落
+        SunriseSunsetContent(weatherModel.dailyBean)
     }
 }

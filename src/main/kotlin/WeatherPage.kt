@@ -10,7 +10,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import model.WeatherModel
-import view.leftInfomation
+import view.leftInformation
 import view.rightInfomation
 
 /**
@@ -30,7 +30,7 @@ fun WeatherPage(appViewModel: AppViewModel) {
     Row(
         modifier = Modifier.fillMaxSize().padding(16.dp)
     ) {
-        leftInfomation(appViewModel,weatherModel.nowBaseBean,currentCityId)
+        leftInformation(appViewModel,weatherModel.nowBaseBean,currentCityId)
         val modifier = Modifier.weight(1f).width(500.dp)
         rightInfomation(modifier,weatherModel)
     }
